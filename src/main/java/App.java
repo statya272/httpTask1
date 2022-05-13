@@ -27,7 +27,7 @@ public class App {
         List<Cat> cats = mapper.readValue(response.getEntity().getContent(), new TypeReference<>() {
         });
         cats.stream()
-                .filter(x -> x.getUpvotes() != null && !x.getUpvotes().equals("0"))
+                .filter(x -> x.getUpvotes() != null)
                 .forEach(System.out::println);
     }
 }

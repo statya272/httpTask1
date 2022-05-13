@@ -3,7 +3,7 @@ public class Cat {
     private String text;
     private String type;
     private String user;
-    private String upvotes;
+    private Integer upvotes;
 
     public Cat() {
     }
@@ -40,11 +40,11 @@ public class Cat {
         this.user = user;
     }
 
-    public String getUpvotes() {
+    public Integer getUpvotes() {
         return upvotes;
     }
 
-    public void setUpvotes(String upvotes) {
+    public void setUpvotes(Integer upvotes) {
         this.upvotes = upvotes;
     }
 
